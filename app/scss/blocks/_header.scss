@@ -1,0 +1,7 @@
+.title{
+    @include text-style($font-weight:700px, $font-size:56px);
+    margin: 40px 0 0;
+    @media (max-width:580px) {
+        font-size: 32px;
+    }
+}

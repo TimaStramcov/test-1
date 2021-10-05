@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="container">
+        <h1 class="title">FTL: Прямая машина</h1>
+    </header>
+    <main class="container">
+        <section class="main">
+            <div class="wrapper">
+            <div class="route-wrapper">
+                <div class="route__form">
+                    <div class="title-form title-form--form-1"><div class="number-circle">1</div><h2>Маршрут</h2></div>
+                    <form action="#" class="route">
+                        <div class="route__item-wrapper">
+                            <label for="from">Откуда</label>
+                            <input id="from" type="text" class="route__form-from">
+                        </div>
+                        <div class="route__item-wrapper">
+                            <label for="to">Откуда</label>
+                            <input id="to" type="text" class="route__form-to">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="car">
+                <div class="title-form title-form--form-2"><div class="number-circle">2</div><h2>Транспорт</h2></div>
+                <div class="car__wrapper">
+                    <div class="list car__item-weigth">
+                        <h3 class="list__title">Грузоподъёмность</h3>
+                        <div class="item-list car__item-list">
+                            <h3 class="item-list__select car__item-list__select">Не выбрана</h3>
+                            <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0L4 3L7 0L8 1L4 5L0 1L1 0Z" fill="black"/>
+                            </svg>
+                            <ul class="item-list__fallen car__item-list__fallen">
+                                <li class="item-li car__item-li">вариант 1</li>
+                                <li class="item-li car__item-li">вариант 2</li>
+                                <li class="item-li car__item-li">вариант 3</li>
+                                <li class="item-li car__item-li">вариант 4</li>
+                                <li class="item-li car__item-li">вариант 5</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list car__item-put">
+                        <h3 class="list__title">Способ погрузки</h3>
+                        <div class="item-list car__item-list">
+                            <h3 class="item-list__select put__item-list__select">Задняя</h3>
+                            <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0L4 3L7 0L8 1L4 5L0 1L1 0Z" fill="black"/>
+                            </svg>
+                            <ul class="item-list__fallen car__item-list__fallen">
+                                <li class="item-li car__item-li">Задняя</li>
+                                <li class="item-li car__item-li">вариант 2</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-wrapper">
+                <div class="title-form title-form--form-3"><div class="number-circle">3</div><h2>Груз</h2></div>
+                <div class="list car__item-product">
+                    <h3 class="list__title">Тип груза</h3>
+                    <div class="item-list product__item-list">
+                        <h3 class="item-list__select car__item-list__select">Не выбран</h3>
+                        <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0L4 3L7 0L8 1L4 5L0 1L1 0Z" fill="black"/>
+                        </svg>
+                        <ul class="item-list__fallen car__item-list__fallen">
+                            <li class="item-li car__item-li">вариант 1</li>
+                            <li class="item-li car__item-li">вариант 2</li>
+                            <li class="item-li car__item-li">вариант 3</li>
+                        </ul>
+                    </div>
+                </div>
+                <form action="#" class="product-form">
+                    <div class="product__item-wrapper">
+                        <div class="list product__item-product">
+                            <h3 class="list__title">Класс опасности</h3>
+                            <div class="item-list product__item-list-danger">
+                                <h3 class="item-list__select product__item-list__select">Класс 5 — Окисляющие вещества и органические перекиси
+                                </h3>
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0L4 3L7 0L8 1L4 5L0 1L1 0Z" fill="black"/>
+                                </svg>
+                                <ul class="item-list__fallen product__item-list__fallen">
+                                    <li class="item-li car__item-li">Класс 5 — Окисляющие вещества и органические перекиси</li>
+                                    <li class="item-li car__item-li">вариант 2</li>
+                                    <li class="item-li car__item-li">вариант 3</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product__wrapper-max-price">
+                            <label for="max-price">Объявленная ценность, ₽</label>
+                            <input id="max-price" type="text" class="product-form__max-price" placeholder="> 1">
+                        </div>
+                    </div>
+                    <div class="product__checkbox-wrapper">
+                        <input id="product__checkbox" class="product__button-checkbox" type="checkbox">
+                        <label for="product__checkbox"><span></span> <h3>Требуется температурный режим</h3></label>
+                        <div class="temp">
+                            <div class="input-temp temp-min">
+                                <label for="min">От, °C</label>
+                                <input type="text">
+                            </div>
+                            <div class="input-temp temp-max">
+                                <label for="max">До, °C</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="time">
+                <div class="title-form title-form--form-4"><div class="number-circle">4</div><h2>Время</h2></div>
+                <div class="time__subtitle">
+                    <h3>Когда прибыть на точку</h3>
+                    <h3>700 км в день</h3>
+                </div>
+                <div class="time__adress__wrapper time__adress-from__wrapper">
+                    <div class="time__adress-from">
+                        <div class="circle circle-from"><div class="dots"></div></div>
+                        <h2 class="time__adress-title time__adress-from-title">Адрес не указан</h2>
+                    </div>
+                    <button class="time__adress__button time__adress-from__button">НЕ ВЫБРАНО</button>
+                </div>
+                <div class="time__adress__wrapper time__adress-to__wrapper">
+                    <div class="time__adress-to">
+                        <div class="circle circle-to"><div class="dots"></div></div>
+                        <h2 class="time__adress-title time__adress-to-title">Адрес не указан</h2>
+                    </div>
+                    <button class="time__adress__button time__adress-to__button">НЕ ВЫБРАНО</button>
+                </div>
+                <h3 class="time__adress__coment-title">Комментарий к заказу</h3>
+                <textarea name="coment" id="coment-order"  placeholder="Укажите особенности въезда на территорию склада или подъезда к адресу"></textarea>
+            </div>
+            </div>
+            <div class="route__subtitle">
+                <h3>Для расчета стоимости необходимо ввести параметры груза, пункты отправки и прибытия.</h3>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="js/main.min.js"></script>
+</body>
+</html>
